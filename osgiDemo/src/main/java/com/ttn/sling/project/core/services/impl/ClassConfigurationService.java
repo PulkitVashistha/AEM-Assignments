@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 @Designate(ocd = MyConfigurationClass.class)
-@Component(service = MyStudentInterface.class)
+@Component(service = MyStudentInterface.class, immediate = true)
 public class ClassConfigurationService implements MyStudentInterface {
 
     Logger LOGGER = LoggerFactory.getLogger(this.getClass());
