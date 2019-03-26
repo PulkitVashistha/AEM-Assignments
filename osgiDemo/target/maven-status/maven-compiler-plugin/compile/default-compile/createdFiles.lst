@@ -1,0 +1,8 @@
+com/ttn/sling/project/core/services/MyConfigurationClass.class
+com/ttn/sling/project/core/SimpleDSComponent.class
+com/ttn/sling/project/core/services/MyStudentClassInterface.class
+com/ttn/sling/project/core/services/impl/StudentClassService.class
+com/ttn/sling/project/core/services/impl/StudentServiceTest.class
+com/ttn/sling/project/core/services/MyStudentInterface.class
+com/ttn/sling/project/core/services/Student.class
+com/ttn/sling/project/core/services/impl/ClassConfigurationService.class

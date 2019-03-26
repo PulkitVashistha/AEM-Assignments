@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1553578848980
+Bundle-ManifestVersion: 2
+Bundle-Name: osgiDemo
+Bundle-SymbolicName: osgiDemo
+Bundle-Version: 1.0.0.201903260540
+Created-By: 1.8.0_201 (Oracle Corporation)
+Import-Package: org.osgi.framework;version="[1.5,2)",org.osgi.service.
+ component;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Private-Package: com.ttn.sling.project.core,com.ttn.sling.project.core
+ .services,com.ttn.sling.project.core.services.impl
+Provide-Capability: osgi.service;objectClass:List<String>="com.ttn.sli
+ ng.project.core.services.MyStudentClassInterface",osgi.service;object
+ Class:List<String>="com.ttn.sling.project.core.services.MyStudentInte
+ rface",osgi.service;objectClass:List<String>="java.lang.Runnable"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.3.0)(!(version>=2.0.0)))",osgi.service;filter:="(obj
+ ectClass=com.ttn.sling.project.core.services.MyStudentClassInterface)
+ ";effective:=active,osgi.service;filter:="(objectClass=com.ttn.sling.
+ project.core.services.MyStudentInterface)";effective:=active,osgi.ee;
+ filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.ttn.sling.project.core.SimpleDSCompone
+ nt.xml,OSGI-INF/com.ttn.sling.project.core.services.impl.ClassConfigu
+ rationService.xml,OSGI-INF/com.ttn.sling.project.core.services.impl.S
+ tudentClassService.xml,OSGI-INF/com.ttn.sling.project.core.services.i
+ mpl.StudentServiceTest.xml
+Tool: Bnd-3.5.0.201709291849

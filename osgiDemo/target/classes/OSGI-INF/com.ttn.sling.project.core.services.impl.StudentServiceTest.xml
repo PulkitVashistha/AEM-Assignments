@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.ttn.sling.project.core.services.impl.StudentServiceTest" activate="activate">
+  <implementation class="com.ttn.sling.project.core.services.impl.StudentServiceTest"/>
+  <reference name="myStudentClassInterface" interface="com.ttn.sling.project.core.services.MyStudentClassInterface" field="myStudentClassInterface"/>
+  <reference name="myStudentInterface" interface="com.ttn.sling.project.core.services.MyStudentInterface" field="myStudentInterface"/>
+</scr:component>
